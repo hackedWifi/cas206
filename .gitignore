@@ -1,0 +1,4 @@
+#ignore folder names
+chapters/
+#ignore .DS files
+.DS_Store
