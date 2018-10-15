@@ -1,0 +1,25 @@
+/* Assignment Name: Project update 1
+File Name: project.css
+Date: 10/14/18
+Programmer: Augusto DelValle */
+
+body {
+    background-color: #f9dec9;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    width: 90%;
+}
+dt {
+    padding: 5px;
+    font-weight: bold
+}
+
+ul {
+    padding: 10px;
+    margin: 10px;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+
+}
