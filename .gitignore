@@ -1,4 +1,5 @@
 #ignore folder names
 chapters/
+site-assets/
 #ignore .DS files
 .DS_Store
