@@ -1,0 +1,48 @@
+
+/* Assignment Name: Mini photo gallery
+File Name: photo_gallery.css
+Date: 10/15/18
+Programmer: Augusto DelValle */
+body {
+    background-color: #f9dec9;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    width: 90%;
+}
+img {
+    height: 100px;
+    width: 200px;
+
+}
+figcaption {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+
+
+    border-radius: 5px;
+}
+header {
+    background-color: #99B2DD;
+    border-radius: 5px;
+
+}
+
+.container {
+    background-color: #E9AFA3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column | row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 400px;
+}
+.items {
+
+  height: 100px; /* Or whatever */
+  margin: auto;
+  width: 200px;
+
+}
