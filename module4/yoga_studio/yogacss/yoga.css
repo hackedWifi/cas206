@@ -1,0 +1,48 @@
+
+/*
+Assignment Name: Yoga path of Light Studio css file
+File Name: yoga.css
+Date: 10/10/18
+Programmer: Augusto DelValle
+*/
+
+
+body {
+    background-color: #F5F5F5;
+    color: #3F2860;
+    font-family: Verdana, Arial , sans-serif;
+}
+header {
+    background-color: #9BC1C2;
+    color: #FFFFFF;
+    text-align: center;
+}
+ h1{
+    line-height: 200%;
+ }
+
+nav {
+    font-weight: bold;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #9BC1C2;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+}
+.studio{
+    font-style: italic;
+}
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+
+}
