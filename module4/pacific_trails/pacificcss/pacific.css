@@ -57,6 +57,7 @@ nav {
     background-color: #90C7E3;
     font-weight: bold;
     padding: .5em .5em .5em 2em
+
 }
 
 nav a {
@@ -70,7 +71,7 @@ nav a {
 
 #homehero {
     height: 300px;
-    background-image: url("../images/coast.jpg");
+    background-image: url(../images/coast.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
