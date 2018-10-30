@@ -1,0 +1,118 @@
+/*
+Assignment Name: Yoga path of Light Studio css file
+File Name: yoga.css
+Date: 10/28/18
+Programmer: Augusto DelValle
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #3F2860;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+footer {
+    background-color: #9BC1C2;
+    display: block;
+    font-size: .60em;
+    font-style: italic;
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    background-color: #9BC1C2;
+    background-image: url("../images/lilyheader.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    height: 150px;
+}
+
+
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+
+
+main {
+    display: block;
+    margin-left: 170px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+
+
+}
+
+nav {
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 1em;
+    width: 180px;
+
+}
+
+nav a {
+    border: 3px outset #CCCCCC;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+
+}
+nav a:link {
+    color: #3F2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+nav a:hover {
+    border: 3px inset #333333;
+    color: #A26100;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+.floatleft {
+    float: left;
+    margin-right: 4em;
+}
+
+.clear {
+    clear: both;
+}
+.studio {
+    font-style: italic;
+}
+
+
+
+#wrapper {
+    background-color: #F5F5F5;
+    min-width: 1200px;
+    max-width: 1480px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+/* #yogadoor {
+    float: right;
+    height: 300px;
+    width: 200px;
+} */
