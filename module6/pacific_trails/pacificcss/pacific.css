@@ -6,6 +6,7 @@ Programmer: Augusto DelValle
 */
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -13,6 +14,7 @@ body {
     background-image: linear-gradient(to bottom, #3399CC, #C2E0F0, #3399CC);
     color: #666666;
     font-family: Verdana, Arial, sans-serif;
+
 }
 
 dt {
@@ -22,7 +24,7 @@ dt {
 
 footer {
     background-color: #FFFFFF;
-    bottom: 0;
+
     display: block;
     font-size: .70em;
     font-style: italic;
@@ -61,18 +63,14 @@ main {
     background-color: #FFFFFF;
     margin-left: 170px;
     display: block;
-    float: right;
     padding: 1px 2px 1px 2px;
-    width: 70%;
 }
 
 nav {
     float: left;
     display: block;
-    /* display: inline; */
     font-weight: bold;
     padding: 0;
-    /* position: relative; */
     width: 160px;
 }
 
@@ -171,12 +169,14 @@ nav ul {
     }
 
     nav a {
+
         padding-right: 2em;
     }
 
     main {
+
         font-size: 90%;
-        left-margin: 0;
+        margin-left: 0;
         padding: 1em;
     }
 
@@ -190,6 +190,46 @@ nav ul {
         min-width: 0;
         width: auto;
     }
-
 }
-@media only all and (max-width: 768px)
+@media only all and (max-width: 768px) {
+    footer {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.5em;
+        height: 100%;
+        padding-left: 0.3em;
+    }
+    main {
+
+        padding: 0.1em 0.6em 0.1em 0.4em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav a {
+        border-bottom: 1px solid #330000;
+        display: block;
+        font-size: 1.1em;
+        padding: 0.2em;
+
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #homehero, #yurthero, #trailhero {
+        display: none;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display:none;
+    }
+}
