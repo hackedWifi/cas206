@@ -10,7 +10,7 @@ footer {
     height: 50px;
     margin: 5px;
     padding: 1em;
-    position: fixed;
+    
     bottom: 0;
     text-align: center;
     width: 95%;
@@ -18,12 +18,9 @@ footer {
 }
 header {
     border: 2px solid #CCCCCC;
-    height: 150px;
+    height: 250px;
     text-align: center;
     padding: 1em;
-    position: relative;
-    top: 60px;
-
 }
 
 main {
@@ -31,7 +28,6 @@ main {
     margin: 0 auto;
     padding: 1em;
     width: 70%;
-    position: relative;
     top: 120px;
 }
 
@@ -39,14 +35,21 @@ nav {
     border: 2px solid #000000;
     height: 50px;
     padding: 1em;
-    position: fixed;
+    
     text-align: center;
-    width: 95%;
+    width: 100%;
 
 }
 p {
     padding: 5px;
 }
+#logo {
+    background-image: url("../site-assets/small_logo.png");
+    background-repeat: no-repeat;
+    height: 187px;
+    width: 200px;
+}
+
 #container {
     margin: 0 auto;
     max-width: 95%;

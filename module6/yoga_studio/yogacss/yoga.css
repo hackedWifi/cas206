@@ -1,15 +1,16 @@
 /*
 Assignment Name: Yoga path of Light Studio css file
 File Name: yoga.css
-Date: 10/28/18
+Date: 11/03/18
 Programmer: Augusto DelValle
 */
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: #3F2860;
-    color: #3F2860;
+    /* color: #3F2860; */
     font-family: Verdana, Arial, sans-serif;
 }
 
@@ -33,13 +34,10 @@ header {
     height: 150px;
 }
 
-
-
 h1 {
     padding-top: 50px;
     padding-left: 2em;
 }
-
 
 main {
     display: block;
@@ -47,8 +45,6 @@ main {
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 1em;
-
-
 }
 
 nav {
@@ -57,7 +53,6 @@ nav {
     font-weight: bold;
     padding: 1em;
     width: 180px;
-
 }
 
 nav a {
@@ -68,8 +63,8 @@ nav a {
     padding: 1em;
     text-decoration: none;
     text-align: center;
-
 }
+
 nav a:link {
     color: #3F2860;
 }
@@ -81,12 +76,10 @@ nav a:visited {
 nav a:hover {
     border: 3px inset #333333;
     color: #A26100;
-
 }
 
 nav ul {
     list-style-type: none;
-
 }
 
 .floatleft {
@@ -97,11 +90,18 @@ nav ul {
 .clear {
     clear: both;
 }
+
 .studio {
     font-style: italic;
 }
 
+#mobile {
+    display: none;
+}
 
+#desktop {
+    display: inline;
+}
 
 #wrapper {
     background-color: #F5F5F5;
@@ -111,8 +111,113 @@ nav ul {
     margin-left: auto;
     width: 80%;
 }
-/* #yogadoor {
-    float: right;
-    height: 300px;
-    width: 200px;
-} */
+
+@media only all and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    h1 {
+        padding: 1em;
+    }
+
+    h2, h3, p, dl {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header {
+        padding: 1px;
+    }
+
+    main {
+        clear: both;
+        font-size: 90%;
+        margin: 0;
+        padding: 2.5em 1em 2.5em 1em
+    }
+
+    main ul {
+        margin-left: 2em;
+    }
+
+    nav {
+        float: none;
+        padding-left: 2em;
+        width: auto;
+    }
+
+    nav a {
+        float: left;
+        margin-left: 0.3em;
+        padding: 0.2em;
+        width: 23%;
+    }
+
+    .clear {
+        padding: 2em;
+    }
+
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    #hero img {
+        height: auto;
+        width: 100%;
+    }
+
+    #wrapper {
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+    @media only all and (max-width: 768px) {
+        footer {
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        h1 {
+            font-size: 2em;
+            padding-top: 0.25em;
+            padding-left: 1.5em;
+            text-align: center;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        nav a {
+            float: left;
+            margin-left: 0.5em;
+            min-width: 6em;
+            padding: 0.5em;
+            width: 45%
+        }
+
+        .floatleft {
+            float: none;
+            display: none;
+        }
+
+        #mobile {
+            display: inline;
+        }
+        #desktop {
+            display: none;
+        }
+        #hero {
+            display: none;
+        }
+    }
