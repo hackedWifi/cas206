@@ -1,7 +1,7 @@
 /*
 Assignment Name: Yoga path of Light Studio css file
 File Name: yoga.css
-Date: 11/09/18
+Date: 11/12/18
 Programmer: Augusto DelValle
 */
 * {
@@ -23,6 +23,11 @@ footer {
     text-align: center;
 }
 
+form {
+    padding: 3em;
+}
+
+
 header {
     background-color: #9BC1C2;
     background-image: url("../images/lilyheader.jpg");
@@ -37,6 +42,21 @@ header {
 h1 {
     padding-top: 50px;
     padding-left: 2em;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    float: left;
+    padding-right: 1em;
+    text-align: right;
+    width: 10em;
 }
 
 main {
@@ -85,20 +105,24 @@ nav ul {
 table {
     border: 1px solid #3f2860;
     border-collapse: collapse;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
     width: 90%;
 }
+
 caption {
     font-weight: bold;
     font-size: 120%;
     margin: 1em;
 
 }
-td, th {
+
+td,
+th {
     border: 1px solid #3F2860;
-    padding: 5px; 
+    padding: 5px;
 }
-tr:nth-of-type(even){
+
+tr:nth-of-type(even) {
     background-color: #9bc1c2;
 }
 
@@ -121,6 +145,11 @@ tr:nth-of-type(even){
 
 #desktop {
     display: inline;
+}
+
+#mySubmit {
+    margin-left: 16.5em;
+
 }
 
 #wrapper {
@@ -146,7 +175,10 @@ tr:nth-of-type(even){
         padding: 1em;
     }
 
-    h2, h3, p, dl {
+    h2,
+    h3,
+    p,
+    dl {
         padding-left: 2em;
         padding-right: 2em;
     }
@@ -201,43 +233,45 @@ tr:nth-of-type(even){
     }
 }
 
-    @media only all and (max-width: 768px) {
-        footer {
-            margin: 0;
-            padding: 0.5em;
-        }
-
-        h1 {
-            font-size: 2em;
-            padding-top: 0.25em;
-            padding-left: 1.5em;
-            text-align: center;
-        }
-
-        main {
-            padding: 0;
-        }
-
-        nav a {
-            float: left;
-            margin-left: 0.5em;
-            min-width: 6em;
-            padding: 0.5em;
-            width: 45%
-        }
-
-        .floatleft {
-            float: none;
-            display: none;
-        }
-
-        #mobile {
-            display: inline;
-        }
-        #desktop {
-            display: none;
-        }
-        #hero {
-            display: none;
-        }
+@media only all and (max-width: 768px) {
+    footer {
+        margin: 0;
+        padding: 0.5em;
     }
+
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        text-align: center;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    nav a {
+        float: left;
+        margin-left: 0.5em;
+        min-width: 6em;
+        padding: 0.5em;
+        width: 45%
+    }
+
+    .floatleft {
+        float: none;
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #hero {
+        display: none;
+    }
+}
