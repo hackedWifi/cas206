@@ -20,11 +20,9 @@ footer p {
 header {
     background-image: url("../site-assets/landmarks_small.png");
     background-size: 50% 100%;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     height: 250px;
-
-
     padding: 1em;
 }
 
@@ -36,6 +34,7 @@ main {
 
 nav {
     background-color: #162426;
+
     height: 50px;
     margin: 0;
     opacity: 0.8;
@@ -54,15 +53,17 @@ ul {
 ul li a {
     color: #f0f1f0;
     display: block;
+
     text-decoration: none;
 
 }
 
 ul li {
     background-color: #162426;
-    float: right;
     font-size: 20px;
+    float: right;
     height: 50px;
+
     line-height: 50px;
     text-align: center;
     width: 200px;
@@ -129,5 +130,52 @@ p {
 #container {
     margin: 0 auto;
     max-width: 95%;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        background-size: 100% 100%;
+    }
+
+    main {
+        width: auto;
+    }
+    nav ul li {
+        display: inline;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    main {
+        padding: 2px;
+        clear: both;
+    }
+    nav {
+        width: auto;
+    }
+    nav li {
+        float: left;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+    footer {
+    width: auto;
+    font-size: 8px;
+}
+footer ul li {
+    width: 70px;
+}
+
 
 }
