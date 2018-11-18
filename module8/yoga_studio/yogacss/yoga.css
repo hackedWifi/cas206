@@ -1,13 +1,16 @@
 /*
 Assignment Name: Yoga path of Light Studio css file
 File Name: yoga.css
-Date: 11/12/18
+Date: 11/18/18
 Programmer: Augusto DelValle
 */
 * {
     box-sizing: border-box;
 }
-
+audio {
+    display: block;
+    margin: 1em;
+}
 body {
     background-color: #3F2860;
     /* color: #3F2860; */
