@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+:root {
+    --background: rgba(0, 214, 170, .85);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+/* navigation styles */
+header {
+    background: var(--background);
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+}
+
+nav {
+    background: var(--background);
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    transform: scale(1, 0);
+   transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav li a {
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 150ms ease-in-out;
+
+}
+
+nav li a:hover {
+    color: black;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    align-items: center;
+    display: flex;
+    left: 0;
+    height: 100%;
+    margin-left: 1em;
+    position: absolute;
+    top: 0;
+
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    background: white;
+    border-radius: 2px;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 2em;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+@media screen and (min-width: 800px){
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav {
+        all: unset;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        grid-column: 2/3;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    nav li {
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+    nav li a {
+        opacity: 1;
+        position: relative;
+    }
+    nav li a::before {
+        background: #222;
+        content: '';
+        display: block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        right: 0; 
+        top: -0.75em;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+
+    }
+    nav li a:hover::before {
+        transform: scale(1, 1);
+    }
+
+    .logo {
+        grid-column: 1 / span 1;
+    }
+
+ }
