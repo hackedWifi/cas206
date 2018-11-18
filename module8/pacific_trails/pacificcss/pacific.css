@@ -1,0 +1,264 @@
+/*
+Assignment Name: Pacific Trails Resort css file
+File Name: pacific.css
+Date: 11/08/18
+Programmer: Augusto DelValle
+*/
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #3399CC;
+    background-image: linear-gradient(to bottom, #3399CC, #C2E0F0, #3399CC);
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+
+}
+
+dt {
+    color: #000033;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #FFFFFF;
+
+    display: block;
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    margin-left: 170px;
+    padding: 1em;
+}
+
+h1 {
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 72px;
+    line-height: 200%;
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    color: #000033;
+}
+input , textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    display: block;
+    font-family: Georgia, sans-serif;
+}
+label {
+    display: block;
+    float: left;
+    padding-right: 1em;
+    width: 15em;
+}
+main {
+    background-color: #FFFFFF;
+    margin-left: 170px;
+    display: block;
+    padding: 1px 2px 1px 2px;
+}
+
+nav {
+    float: left;
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    width: 160px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #FFFFFF;
+}
+
+nav a:visited {
+    color: #C2E0F0;
+}
+
+nav a:hover {
+    color: #CCCCCC;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1em;
+}
+
+table {
+    border: 1px solid #3399CC;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+}
+td, th {
+    border: 1px solid #3399CC;
+
+    padding: 5px;
+
+}
+tr:nth-of-type(even){
+    background-color: #f5fafc;
+
+}
+.text {
+    text-align: left;
+}
+.resort {
+    color: #000033;
+    font-size: 1.2em;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url("../images/coast.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#wrapper {
+    background-color: #000033;
+    box-shadow: 5px 5px 5px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 700px;
+    max-width: 1024px;
+    width: 80%;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url("../images/trail.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url("../images/yurt.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+#mySubmit {
+    margin-left: 25em;
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        background-color: #124373;
+        float: none;
+        padding: 0.01em 1em 0.01em 1em;
+        width: auto;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+
+        padding-right: 2em;
+    }
+
+    main {
+
+        font-size: 90%;
+        margin-left: 0;
+        padding: 1em;
+    }
+
+    #trailhero, #yurthero, #homehero {
+        margin-left: 0;
+    }
+
+    #wapper {
+        box-shadow: none;
+        margin: 0;
+        min-width: 0;
+        width: auto;
+    }
+}
+@media only all and (max-width: 768px) {
+    footer {
+        padding: 0;
+    }
+    h1 {
+        font-size: 1.5em;
+        height: 100%;
+        padding-left: 0.3em;
+    }
+    main {
+        padding: 0.1em 0.6em 0.1em 0.4em;
+        
+    }
+    nav {
+        padding: 0;
+    }
+    nav a {
+        border-bottom: 1px solid #330000;
+        display: block;
+        font-size: 1.1em;
+        padding: 0.2em;
+
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #homehero, #yurthero, #trailhero {
+        display: none;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display:none;
+    }
+}

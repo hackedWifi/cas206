@@ -1,0 +1,277 @@
+/*
+Assignment Name: Yoga path of Light Studio css file
+File Name: yoga.css
+Date: 11/12/18
+Programmer: Augusto DelValle
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3F2860;
+    /* color: #3F2860; */
+    font-family: Verdana, Arial, sans-serif;
+}
+
+footer {
+    background-color: #9BC1C2;
+    display: block;
+    font-size: .60em;
+    font-style: italic;
+    padding: 1em;
+    text-align: center;
+}
+
+form {
+    padding: 3em;
+}
+
+
+header {
+    background-color: #9BC1C2;
+    background-image: url("../images/lilyheader.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    height: 150px;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    float: left;
+    padding-right: 1em;
+    text-align: right;
+    width: 10em;
+}
+
+main {
+    display: block;
+    margin-left: 170px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+nav {
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 0;
+    width: 170px;
+}
+
+nav a {
+    border: 3px outset #CCCCCC;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:link {
+    color: #3F2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+nav a:hover {
+    border: 3px inset #333333;
+    color: #A26100;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+table {
+    border: 1px solid #3f2860;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    width: 90%;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 120%;
+    margin: 1em;
+
+}
+
+td,
+th {
+    border: 1px solid #3F2860;
+    padding: 5px;
+}
+
+tr:nth-of-type(even) {
+    background-color: #9bc1c2;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 4em;
+}
+
+.clear {
+    clear: both;
+}
+
+.studio {
+    font-style: italic;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#mySubmit {
+    margin-left: 16.5em;
+
+}
+
+#wrapper {
+    background-color: #F5F5F5;
+    min-width: 1200px;
+    max-width: 1480px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+@media only all and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    h1 {
+        padding: 1em;
+    }
+
+    h2,
+    h3,
+    p,
+    dl {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header {
+        padding: 1px;
+    }
+
+    main {
+        clear: both;
+        font-size: 90%;
+        margin: 0;
+        padding: 2.5em 1em 2.5em 1em
+    }
+
+    main ul {
+        margin-left: 2em;
+    }
+
+    nav {
+        float: none;
+        padding-left: 2em;
+        width: auto;
+    }
+
+    nav a {
+        float: left;
+        margin-left: 0.3em;
+        padding: 0.2em;
+        width: 23%;
+    }
+
+    .clear {
+        padding: 2em;
+    }
+
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    #hero img {
+        height: auto;
+        width: 100%;
+    }
+
+    #wrapper {
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media only all and (max-width: 768px) {
+    footer {
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        text-align: center;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    nav a {
+        float: left;
+        margin-left: 0.5em;
+        min-width: 6em;
+        padding: 0.5em;
+        width: 45%
+    }
+
+    .floatleft {
+        float: none;
+        display: none;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #hero {
+        display: none;
+    }
+}
