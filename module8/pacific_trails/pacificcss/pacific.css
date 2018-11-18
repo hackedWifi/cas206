@@ -119,6 +119,12 @@ tr:nth-of-type(even){
     background-color: #f5fafc;
 
 }
+
+video, embed {
+    margin: 2em;
+    float: right;
+}
+
 .text {
     text-align: left;
 }
