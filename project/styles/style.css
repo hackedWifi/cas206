@@ -19,7 +19,42 @@ body {
 
 
 }
+form label {
+    display: block;
+    font-weight: bold;
+    padding-top: .5em;
+}
+form input {
+    border: 1px solid #717f86;
+    border-radius: .5em;
+    display: block;
+    padding: 1em;
+    width: 100%;
+}
 
+form input[type=submit] {
+    background-color:  var(--background);
+    cursor: pointer;
+    border: none;
+    margin-top: 1em;
+    width: 10em;
+    
+}
+
+form select {
+    border: 1px solid #717f86;
+    border-radius: 0.5em;
+    height: 3.5em;
+    margin-top: 1em;
+    width: 100%;
+}
+form textarea {
+    border-radius: .5em;
+    overflow: auto;
+    padding: 1em;
+    resize: vertical;
+    width: 100%;
+}
 footer p {
     color: #717f86;
     margin-top: 1em;
@@ -113,7 +148,13 @@ table th {
     position: relative;
     top: 3em;
 }
-
+#contact_form {
+    background: #edeff0;
+    border-radius: .5em;
+    margin: 1em auto;
+    padding: 1em;
+    width: 50%;
+}
 #bg {
     display: none;
 }
