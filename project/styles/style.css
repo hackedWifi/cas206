@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-    --background: rgba(0, 214, 170, .85);
+    --bg_color: rgba(0, 214, 170, .85);
 }
 
 *,
@@ -33,7 +33,7 @@ form input {
 }
 
 form input[type=submit] {
-    background-color:  var(--background);
+    background-color:  var(--bg_color);
     cursor: pointer;
     border: none;
     margin-top: 1em;
@@ -74,7 +74,7 @@ footer img {
 
 /* navigation styles */
 header {
-    background: var(--background);
+    background: var(--bg_color);
     position: fixed;
     text-align: center;
     width: 100%;
@@ -90,7 +90,7 @@ main {
 }
 
 nav {
-    background: var(--background);
+    background: var(--bg_color);
     position: absolute;
     text-align: left;
     top: 100%;
