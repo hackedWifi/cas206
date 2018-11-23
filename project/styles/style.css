@@ -132,7 +132,7 @@ table {
     border-collapse: collapse;
     margin: 1em auto;
 }
-
+;
 table td {
 
     border: solid 1px #222;
@@ -158,7 +158,21 @@ table th {
 #bg {
     display: none;
 }
-
+#project_div
+{
+    margin: 0 auto;
+    background: #edeff0;
+    padding: 1em;
+    width: 90%;
+}
+#project_div ul {
+    
+    list-style-type: none;
+}
+#project_div a {
+    color: #222;
+    text-decoration: none;
+}
 .logo {
     height: 2em;
     width: 3em;
