@@ -71,6 +71,9 @@ footer img {
     height: 2em;
     width: 2em;
 }
+footer ul li {
+    display: inline-block;
+}
 
 /* navigation styles */
 header {
@@ -142,11 +145,15 @@ table th {
     border: solid 1px #222;
     background: #edeff0;
 }
+#bg {
+    height: 450px;
+    width: 100%;
+}
 
 #content {
-    padding: 0.5em;
-    position: relative;
+    padding: 1.5em;
     top: 3em;
+    min-width: 400px;
 }
 #contact_form {
     background: #edeff0;
@@ -154,9 +161,6 @@ table th {
     margin: 1em auto;
     padding: 1em;
     width: 50%;
-}
-#bg {
-    display: none;
 }
 #project_div
 {
@@ -172,6 +176,16 @@ table th {
 #project_div a {
     color: #222;
     text-decoration: none;
+}
+.bg-image {
+    background: #222 url(/site-assets/portland_historical_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    opacity: .7;
+    width: 100%;
+    z-index: -1;
 }
 .logo {
     height: 2em;
