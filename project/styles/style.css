@@ -1,254 +1,243 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 
 :root {
-    --bg_color: rgba(0, 214, 170, .85);
+  --bg_color: rgba(0, 214, 170, 0.85);
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 18px;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-
-
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
 }
 form label {
-    display: block;
-    font-weight: bold;
-    padding-top: .5em;
+  display: block;
+  font-weight: bold;
+  padding-top: 0.5em;
 }
 form input {
-    border: 1px solid #717f86;
-    border-radius: .5em;
-    display: block;
-    padding: 1em;
-    width: 100%;
+  border: 1px solid #717f86;
+  border-radius: 0.5em;
+  display: block;
+  padding: 1em;
+  width: 100%;
 }
 
-form input[type=submit] {
-    background-color:  var(--bg_color);
-    cursor: pointer;
-    border: none;
-    margin-top: 1em;
-    width: 10em;
-    
+form input[type="submit"] {
+  background-color: var(--bg_color);
+  cursor: pointer;
+  border: none;
+  margin-top: 1em;
+  width: 10em;
 }
 
 form select {
-    border: 1px solid #717f86;
-    border-radius: 0.5em;
-    height: 3.5em;
-    margin-top: 1em;
-    width: 100%;
+  border: 1px solid #717f86;
+  border-radius: 0.5em;
+  height: 3.5em;
+  margin-top: 1em;
+  width: 100%;
 }
 form textarea {
-    border-radius: .5em;
-    overflow: auto;
-    padding: 1em;
-    resize: vertical;
-    width: 100%;
+  border-radius: 0.5em;
+  overflow: auto;
+  padding: 1em;
+  resize: vertical;
+  width: 100%;
 }
 footer p {
-    color: #717f86;
-    margin-top: 1em;
-
+  color: #717f86;
+  margin-top: 1em;
 }
 
 footer ul {
-    padding-left: 0.5em;
-    list-style-type: none;
+  padding-left: 0.5em;
+  list-style-type: none;
 }
 
 footer img {
-    opacity: 0.2;
-    height: 2em;
-    width: 2em;
+  opacity: 0.2;
+  height: 2em;
+  width: 2em;
 }
 footer ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* navigation styles */
 header {
-    background: var(--bg_color);
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 999;
+  background: var(--bg_color);
+  position: fixed;
+  padding: 0.4em;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
 }
 
 main {
-    background-color: #edeff0;
-    border-radius: 0.5em;
-    padding: 2em;
-    margin-top: 1em;
-
+  background-color: #edeff0;
+  border-radius: 0.5em;
+  padding: 2em;
+  margin-top: 1em;
 }
 
 nav {
-    background: var(--bg_color);
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-    width: 100%;
+  background: var(--bg_color);
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  width: 100%;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    ;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 nav li a {
-    color: white;
-    font-size: 1.2rem;
-    opacity: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: opacity 150ms ease-in-out;
-
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 150ms ease-in-out;
 }
 
 nav li a:hover {
-    color: black;
+  color: black;
 }
 
 table {
-    border: solid 1px #222;
-    border-collapse: collapse;
-    margin: 1em auto;
+  border: solid 1px #222;
+  border-collapse: collapse;
+  margin: 1em auto;
 }
-;
 table td {
-
-    border: solid 1px #222;
+  border: solid 1px #222;
 }
 
 table th {
-    border: solid 1px #222;
-    background: #edeff0;
+  border: solid 1px #222;
+  background: #edeff0;
 }
 #bg {
-    height: 450px;
-    width: 100%;
+  height: 450px;
+  width: 100%;
 }
 
 #content {
-    padding: 1.5em;
-    top: 3em;
-    min-width: 400px;
+  padding: 1.5em;
+  top: 3em;
+  min-width: 400px;
 }
 #contact_form {
-    background: #edeff0;
-    border-radius: .5em;
-    margin: 1em auto;
-    padding: 1em;
-    width: 50%;
+  background: #edeff0;
+  border-radius: 0.5em;
+  margin: 1em auto;
+  padding: 1em;
+  width: 50%;
 }
-#project_div
-{
-    margin: 0 auto;
-    background: #edeff0;
-    padding: 1em;
-    width: 90%;
+#project_div {
+  margin: 0 auto;
+  background: #edeff0;
+  padding: 1em;
+  width: 90%;
 }
 #project_div ul {
-    
-    list-style-type: none;
+  list-style-type: none;
 }
 #project_div a {
-    color: #222;
-    text-decoration: none;
+  color: #222;
+  text-decoration: none;
 }
 .bg-image {
-    background: #222 url(/site-assets/portland_historical_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 450px;
-    opacity: .7;
-    width: 100%;
-    z-index: -1;
+  background: #222 url(/site-assets/portland_historical_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  opacity: 0.7;
+  width: 100%;
+  z-index: -1;
 }
 .logo {
-    height: 2em;
-    width: 3em;
+  height: 4em;
+  width: 5em;
 }
 
-.nav-toggle:checked~nav {
-    transform: scale(1, 1);
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked~nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
 }
 
 .nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    align-items: center;
-    display: flex;
-    left: 0;
-    height: 100%;
-    margin-left: 1em;
-    position: absolute;
-    top: 0;
-
+  align-items: center;
+  display: flex;
+  left: 0;
+  height: 100%;
+  margin-left: 1em;
+  position: absolute;
+  top: 0;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-    background: white;
-    border-radius: 2px;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 2em;
+  background: white;
+  border-radius: 2px;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 2em;
 }
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-    content: '';
-    position: absolute;
-
+  content: "";
+  position: absolute;
 }
 
 .nav-toggle-label span::before {
-    bottom: 7px;
+  bottom: 7px;
 }
 
 .nav-toggle-label span::after {
-    top: 7px;
+  top: 7px;
 }
 
 /* media queries */
 @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-        display: none;
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    /* footer::before {
+  /* footer::before {
         background:#717f86;
         content: '';
         display: block;
@@ -259,105 +248,105 @@ table th {
 
     } */
 
-    footer p {
-        display: block;
-        float: left;
-    }
+  footer p {
+    display: block;
+    float: left;
+  }
 
-    footer ul {
-        margin: 1em;
-        float: right;
-        list-style-type: none;
-    }
+  footer ul {
+    margin: 1em;
+    float: right;
+    list-style-type: none;
+  }
 
-    footer ul li a {
-        text-decoration: none;
-    }
+  footer ul li a {
+    text-decoration: none;
+  }
 
-    footer ul li {
-        display: inline;
-    }
+  footer ul li {
+    display: inline;
+  }
 
-    footer ul li a img {
-        display: inline;
-    }
+  footer ul li a img {
+    display: inline;
+  }
 
-    footer span {
-        display: none;
-    }
+  footer span {
+    display: none;
+  }
 
-    header {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-    }
+  header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin: 0;
+    padding: 0;
+  }
 
-    nav {
-        all: unset;
-        align-items: center;
-        display: flex;
-        justify-content: flex-end;
-        grid-column: 2/3;
-    }
+  nav {
+    all: unset;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 2/3;
+  }
 
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-    }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
 
-    nav li {
-        margin-left: 10px;
-        margin-bottom: 0;
-    }
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
 
-    nav li a {
-        opacity: 1;
-        position: relative;
-    }
+  nav li a {
+    opacity: 1;
+    position: relative;
+  }
 
-    nav li a::before {
-        background: #222;
-        content: '';
-        display: block;
-        height: 3px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: -0.75em;
-        transform: scale(0, 1);
-        transition: transform ease-in-out 250ms;
+  nav li a::before {
+    background: #222;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -0.75em;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
 
-    }
+  nav li a:hover::before {
+    transform: scale(1, 1);
+  }
 
-    nav li a:hover::before {
-        transform: scale(1, 1);
-    }
+  #bg {
+    border-radius: 5px;
+    display: block;
 
-    #bg {
-        border-radius: 5px;
-        display: block;
+    height: 16em;
+    width: 100%;
+  }
 
-        height: 16em;
-        width: 100%;
-    }
+  #content {
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    max-width: 90%;
+    top: 6em;
+    width: 100%;
+  }
 
-    #content {
-        border-radius: 5px;
-        font-size: 18px;
-        margin: 0 auto;
-        height: 100vh;
-        position: relative;
-        max-width: 90%;
-        top: 6em;
-        width: 100%;
-    }
-
-    .logo {
-        font-size: 18px;
-        height: 4em;
-        grid-column: 1 / span 1;
-        padding: 0.5em;
-        width: 5em;
-    }
-
+  .logo {
+    font-size: 18px;
+    height: 5em;
+    grid-column: 1 / span 1;
+    padding: 0;
+    width: 6em;
+  }
 }
