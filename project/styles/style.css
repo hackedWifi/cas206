@@ -18,6 +18,7 @@ body {
   padding: 0;
   min-width: 500px;
 }
+
 form label {
   display: block;
   font-weight: bold;
@@ -75,18 +76,16 @@ footer ul li {
 /* navigation styles */
 header {
   background: var(--bg_color);
-  position: fixed;
+  position: relative;
   padding: 0.4em;
   text-align: center;
   width: 100%;
-  z-index: 999;
 }
 
 main {
   background-color: #edeff0;
   border-radius: 0.5em;
   padding: 2em;
-  margin-top: 1em;
 }
 
 nav {
@@ -139,14 +138,17 @@ table th {
   background: #edeff0;
 }
 #bg {
-  height: 450px;
-  width: 100%;
+  height: 481px;
+  object-fit: contain;
+  width: 850px;
+  margin: auto;
 }
 
 #content {
   padding: 1.5em;
   top: 3em;
   min-width: 400px;
+  margin: auto;
 }
 #contact_form {
   background: #edeff0;
@@ -168,16 +170,17 @@ table th {
   color: #222;
   text-decoration: none;
 }
-.bg-image {
-  background: #222 url(/site-assets/portland_historical_bg.jpg);
-  background-size: cover;
+/* .bg-image {
+  background: #222 url(../site-assets/portland_historical_bg.jpg);
+  background-size: contain; 
   background-position: center;
   background-repeat: no-repeat;
   height: 450px;
   opacity: 0.7;
+  object-fit: cover;
   width: 100%;
   z-index: -1;
-}
+}*/
 .logo {
   height: 4em;
   width: 5em;
@@ -236,17 +239,6 @@ table th {
   .nav-toggle-label {
     display: none;
   }
-
-  /* footer::before {
-        background:#717f86;
-        content: '';
-        display: block;
-        height: 2px;
-        left: 0;
-        opacity: .1;
-        right: 0;
-
-    } */
 
   footer p {
     display: block;
@@ -321,25 +313,6 @@ table th {
 
   nav li a:hover::before {
     transform: scale(1, 1);
-  }
-
-  #bg {
-    border-radius: 5px;
-    display: block;
-
-    height: 16em;
-    width: 100%;
-  }
-
-  #content {
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 0 auto;
-    height: 100vh;
-    position: relative;
-    max-width: 90%;
-    top: 6em;
-    width: 100%;
   }
 
   .logo {
