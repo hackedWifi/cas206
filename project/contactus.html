@@ -26,38 +26,52 @@
       <nav>
         <ul>
           <li><a href="downtown.html">downtown</a></li>
-          <li><a href="pages/growth.html">Growth</a></li>
+          <li><a href="growth.html">Growth</a></li>
           <li><a href="landmarks.html">Landmarks</a></li>
           <li><a href="booknow.html">Book Tour</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <div id="content">
+    <div id="wrapper">
+      <div class="company-info"><h2>Contact Us</h2></div>
       <div id="contact_form">
-        <h2>Contact Us</h2>
         <form action="post">
-          <label for="fName">Name</label> <input type="text" id="fName" />
-          <label for="email">E-mail</label> <input type="email" id="email" />
-          <label for="description">Message</label>
-          <textarea name="description" id="description" rows="2"></textarea>
-          <input type="submit" value="Submit" />
+          <p>
+            <label for="fName">Name</label>
+            <input required type="text" id="fName" />
+          </p>
+          <p>
+            <label for="email">E-mail</label>
+            <input required type="email" id="email" />
+          </p>
+          <p class="full">
+            <label for="description">Message</label>
+            <textarea
+              required
+              name="description"
+              id="description"
+              rows="2"
+            ></textarea>
+          </p>
+          <p class="full"><input type="submit" /></p>
         </form>
       </div>
-
-      <footer>
-        <p>&copy; Copyrights 2018</p>
-        <ul>
-          <li>
-            <a href="#"><img src="../site-assets/fb.svg" alt="" /> </a>
-          </li>
-          <li>
-            <a href="#"><img src="../site-assets/gplus.svg" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="../site-assets/twitter.svg" alt=""/></a>
-          </li>
-        </ul>
-      </footer>
     </div>
+
+    <footer>
+      <p>&copy; Copyrights 2018</p>
+      <ul>
+        <li>
+          <a href="#"><img src="../site-assets/fb.svg" alt="" /> </a>
+        </li>
+        <li>
+          <a href="#"><img src="../site-assets/gplus.svg" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="../site-assets/twitter.svg" alt=""/></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

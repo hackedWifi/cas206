@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 
 :root {
-  --bg_color: rgba(0, 214, 170, 0.85);
+  --bg_color: rgba(0, 214, 170);
+  --primary-color: #444;
+  --secondary-color: #fff;
 }
 
 *,
@@ -9,17 +11,25 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*mobile display */
+a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--bg_color);
+}
 body {
   font-size: 18px;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  min-width: 500px;
-}
 
-form label {
+  min-width: 400px;
+}
+/* form label {
   display: block;
   font-weight: bold;
   padding-top: 0.5em;
@@ -53,31 +63,45 @@ form textarea {
   padding: 1em;
   resize: vertical;
   width: 100%;
+} */
+footer {
+  max-width: 100%;
+  padding: 1em;
 }
-footer p {
+/* footer p {
   color: #717f86;
   margin-top: 1em;
+} */
+footer p {
+  display: block;
+  float: left;
 }
 
 footer ul {
-  padding-left: 0.5em;
+  margin: 1em;
+  float: right;
   list-style-type: none;
 }
 
+footer ul li {
+  display: inline-block;
+}
 footer img {
   opacity: 0.2;
   height: 2em;
   width: 2em;
 }
-footer ul li {
-  display: inline-block;
+footer a img:hover {
+  background: var(--bg_color);
+  border-radius: 50%;
+  opacity: 1;
 }
-
 /* navigation styles */
 header {
   background: var(--bg_color);
   position: relative;
   padding: 0.4em;
+
   text-align: center;
   width: 100%;
 }
@@ -85,13 +109,15 @@ header {
 main {
   background-color: #edeff0;
   border-radius: 0.5em;
+  margin: 10px auto;
+
   padding: 2em;
 }
 
 nav {
   background: var(--bg_color);
   position: absolute;
-  text-align: left;
+  text-align: center;
   top: 100%;
   left: 0;
   transform: scale(1, 0);
@@ -99,7 +125,6 @@ nav {
   transition: transform 400ms ease-in-out;
   width: 100%;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -112,16 +137,17 @@ nav li {
 }
 
 nav li a {
-  color: white;
+  color: var(--primary-color);
   font-size: 1.2rem;
-  opacity: 0;
+  font-weight: 400;
+
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 150ms ease-in-out;
 }
 
 nav li a:hover {
-  color: black;
+  color: var(--secondary-color);
 }
 
 table {
@@ -131,32 +157,67 @@ table {
 }
 table td {
   border: solid 1px #222;
+
+  padding: 0.4em;
 }
 
 table th {
   border: solid 1px #222;
   background: #edeff0;
+  padding: 0.4em;
 }
 #bg {
-  height: 481px;
-  object-fit: contain;
-  width: 850px;
-  margin: auto;
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
 }
 
-#content {
-  padding: 1.5em;
-  top: 3em;
-  min-width: 400px;
-  margin: auto;
-}
 #contact_form {
   background: #edeff0;
-  border-radius: 0.5em;
-  margin: 1em auto;
-  padding: 1em;
-  width: 50%;
 }
+#contact_form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+#contact_form label {
+  display: block;
+}
+#contact_form p {
+  margin: 0;
+}
+#contact_form .full {
+  grid-column: 1/3;
+}
+#contact_form input,
+#contact_form textarea {
+  border: 1px solid rgb(3, 180, 145);
+  outline-color: rgb(3, 180, 145);
+  padding: 1em;
+  resize: vertical;
+  width: 100%;
+}
+#contact_form input[type="date"] {
+  height: 41px;
+}
+#contact_form input[type="submit"] {
+  border: 0;
+  background: var(--bg_color);
+  text-transform: uppercase;
+}
+#contact_form input[type="submit"]:hover,
+#contact_forminput[type="submit"]:focus {
+  background: rgb(3, 180, 145);
+  color: var(--secondary-color);
+  outline: 0;
+}
+
+#contact_form select {
+  border-radius: 0;
+  height: 41px;
+  width: 100%;
+}
+
 #project_div {
   margin: 0 auto;
   background: #edeff0;
@@ -170,20 +231,19 @@ table th {
   color: #222;
   text-decoration: none;
 }
-/* .bg-image {
-  background: #222 url(../site-assets/portland_historical_bg.jpg);
-  background-size: contain; 
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 450px;
-  opacity: 0.7;
-  object-fit: cover;
-  width: 100%;
-  z-index: -1;
-}*/
+#wrapper {
+  box-shadow: 0 0 20px 0 var(--bg_color);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  margin-top: 50px;
+}
+#wrapper > * {
+  padding: 1em;
+}
 .logo {
   height: 4em;
-  width: 5em;
+  max-width: 100%;
 }
 
 .nav-toggle:checked ~ nav {
@@ -235,7 +295,7 @@ table th {
 }
 
 /* media queries */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none;
   }
@@ -269,7 +329,8 @@ table th {
 
   header {
     display: grid;
-    grid-template-columns: 200px 1fr;
+
+    grid-template-columns: 100px 1fr;
     margin: 0;
     padding: 0;
   }
@@ -294,12 +355,13 @@ table th {
   }
 
   nav li a {
-    opacity: 1;
+    font-size: 20px;
+
     position: relative;
   }
 
   nav li a::before {
-    background: #222;
+    background: var(--primary-color);
     content: "";
     display: block;
     height: 3px;
@@ -314,12 +376,31 @@ table th {
   nav li a:hover::before {
     transform: scale(1, 1);
   }
-
+  #bg {
+    display: block;
+    height: auto;
+    max-height: 480px;
+    margin: auto;
+    max-width: 100%;
+  }
   .logo {
     font-size: 18px;
     height: 5em;
     grid-column: 1 / span 1;
-    padding: 0;
+    padding: 0.3em;
     width: 6em;
+  }
+  #wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #wrapper * {
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav li a {
+    font-size: 24px;
   }
 }

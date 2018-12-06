@@ -28,60 +28,82 @@
           <li><a href="downtown.html">downtown</a></li>
           <li><a href="growth.html">Growth</a></li>
           <li><a href="landmarks.html">Landmarks</a></li>
-          <li><a href="booknow.html"></a></li>
+          <li><a href="booknow.html">Book Now</a></li>
           <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <div id="content">
+
+    <div id="wrapper">
+      <div class="company-info"><h2>Book a reservation</h2></div>
       <div id="contact_form">
-        <h2>Book a reservation</h2>
         <form action="post">
-          <label for="tours"></label>
-          <select name="tours" id="tours">
-            <option>Select your tour </option>
-            <option value="downtown">Downtown</option>
-            <option value="growth">Growth</option>
-            <option value="landmarks">Landmarks</option>
-          </select>
-          <label for="fName">Name</label> <input type="text" id="fName" />
-          <label for="lName">Last name</label> <input type="text" id="lName" />
-          <label for="email">E-mail</label> <input type="email" id="email" />
-          <label for="tel">Phone</label> <input type="tel" id="tel" />
-          <label for="date">Tour date</label> <input type="date" id="date" />
-          <select name="participants" id="participants">
-            <option>Total participants</option>
-            <option value="one">1 to 5</option>
-            <option value="five">5 to 10</option>
-            <option value="ten">10 to 15</option>
-          </select>
-          <label for="allergies"
-            >Does anyone in your group have allergies? If yes, please list
-            them.</label
-          >
-          <textarea
-            name="food"
-            id="allergies"
-            placeholder="Does anyone have allergies?"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <p>
+            <label for="tours">Tours</label>
+            <select name="tours" id="tours">
+              <option value="downtown">Downtown</option>
+              <option value="growth">Growth</option>
+              <option value="landmarks">Landmarks</option>
+            </select>
+          </p>
+          <p>
+            <label for="fName">Name</label>
+            <input required type="text" id="fName" />
+          </p>
+          <p>
+            <label for="lName">Last name</label>
+            <input requiered type="text" id="lName" />
+          </p>
+          <p>
+            <label for="email">E-mail</label>
+            <input required type="email" id="email" />
+          </p>
+          <p>
+            <label for="tel">Phone</label>
+            <input required type="tel" id="tel" />
+          </p>
+          <p>
+            <label for="date">Tour date</label>
+            <input required type="date" id="date" />
+          </p>
+          <p>
+            <label for="participants">Participants</label>
+            <select name="participants" id="participants">
+              <option value="one">1 to 5</option>
+              <option value="five">5 to 10</option>
+              <option value="ten">10 to 15</option>
+            </select>
+          </p>
+          <p class="full">
+            <label for="allergies"
+              >Does anyone in your group have allergies? If yes, please list
+              them.</label
+            >
+            <textarea
+              name="food"
+              id="allergies"
+              placeholder="Does anyone have allergies?"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+          <p class="full"><input type="submit" /></p>
         </form>
       </div>
-      <footer>
-        <p>&copy; Copyrights 2018</p>
-        <ul>
-          <li>
-            <a href="#"><img src="../site-assets/fb.svg" alt="" /> </a>
-          </li>
-          <li>
-            <a href="#"><img src="../site-assets/gplus.svg" alt=""/></a>
-          </li>
-          <li>
-            <a href="#"><img src="../site-assets/twitter.svg" alt=""/></a>
-          </li>
-        </ul>
-      </footer>
     </div>
+    <footer>
+      <p>&copy; Copyrights 2018</p>
+      <ul>
+        <li>
+          <a href="#"><img src="../site-assets/fb.svg" alt="" /> </a>
+        </li>
+        <li>
+          <a href="#"><img src="../site-assets/gplus.svg" alt=""/></a>
+        </li>
+        <li>
+          <a href="#"><img src="../site-assets/twitter.svg" alt=""/></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
